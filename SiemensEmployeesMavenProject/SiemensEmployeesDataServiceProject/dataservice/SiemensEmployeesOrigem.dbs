@@ -1,0 +1,18 @@
+<data name="employees-Origem" serviceNamespace="employees-Origem" transports="local">
+    <config id="default">
+        <property name="carbon_datasource_name">SiemensEmployee</property>
+    </config>
+    <operation name="searchIdEmployees">
+        <call-query href="searchIdEmployees_query"/>
+    </operation>
+    <query id="searchIdEmployees_query" useConfig="default">
+        <sql>
+			SELECT emp_no AS CHAVE_USUARIO
+			FROM employees
+			LIMIT 20
+		</sql>
+        <result element="DocumentCollection" rowName="ID_EMPLOYEE">
+            <element column="CHAVE_USUARIO" name="CHAVE_ACESSO" xsdType="xs:string"/>
+        </result>
+    </query>
+</data>

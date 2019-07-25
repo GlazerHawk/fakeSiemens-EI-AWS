@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="SiemensEmployeesServiceV1" groupId="com.example.SiemensEmployeesRegistryProject.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>SiemensEmployeesServiceV1.wsdl</file>
+            <path>/_system/config/endpoints</path>
+            <mediaType>application/wsdl+xml</mediaType>
+        </item>
+    </artifact>
+    <artifact name="SiemensEmployeesServiceV1Schema" groupId="com.example.SiemensEmployeesRegistryProject.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>SiemensEmployeesServiceV1Schema.xsd</file>
+            <path>/_system/config/endpoints</path>
+            <mediaType>application/x-xsd+xml</mediaType>
+        </item>
+    </artifact>
+    <artifact name="SiemensEmployees_LocalProxy_Endpoint" groupId="com.example.SiemensEmployeesRegistryProject.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>SiemensEmployees_LocalProxy_Endpoint.xml</file>
+            <path>/_system/config/endpoints</path>
+            <mediaType>application/vnd.wso2.template.endpoint</mediaType>
+        </item>
+    </artifact>
+</artifacts>

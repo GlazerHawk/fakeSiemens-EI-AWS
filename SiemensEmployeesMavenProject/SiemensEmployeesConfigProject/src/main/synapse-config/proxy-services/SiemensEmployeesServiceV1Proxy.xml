@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="SiemensEmployeesServiceV1Proxy" startOnLoad="true" transports="https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+            <call-template target="SiemensLoggingTemplateV1">
+                <with-param name="level" value="Info"/>
+                <with-param name="component" value="SiemensEmployeesServiceV1Proxy"/>
+                <with-param name="message" value="[PROXY_INIT] Initializing Proxy"/>
+            </call-template>
+            <call>
+                <endpoint key="conf:endpoints/SiemensEmployees_LocalProxy_Endpoint.xml"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>

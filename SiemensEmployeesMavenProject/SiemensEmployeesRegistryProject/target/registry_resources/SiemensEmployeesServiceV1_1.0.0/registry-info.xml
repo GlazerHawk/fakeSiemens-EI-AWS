@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <item>
+        <file>SiemensEmployeesServiceV1.wsdl</file>
+        <path>/_system/config/endpoints</path>
+        <mediaType>application/wsdl+xml</mediaType>
+    </item>
+</resources>

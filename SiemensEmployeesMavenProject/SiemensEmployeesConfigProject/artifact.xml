@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="SiemensEmployeesServiceV1_Employees_LocalProxy" groupId="com.example.SiemensEmployeesConfigProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/SiemensEmployeesServiceV1_Employees_LocalProxy.xml</file>
+    </artifact>
+    <artifact name="SiemensLoggingTemplateV1" groupId="com.example.SiemensEmployeesConfigProject.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/SiemensLoggingTemplateV1.xml</file>
+    </artifact>
+    <artifact name="SiemensEmployeesServiceV1Proxy" groupId="com.example.SiemensEmployeesConfigProject.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/SiemensEmployeesServiceV1Proxy.xml</file>
+    </artifact>
+</artifacts>

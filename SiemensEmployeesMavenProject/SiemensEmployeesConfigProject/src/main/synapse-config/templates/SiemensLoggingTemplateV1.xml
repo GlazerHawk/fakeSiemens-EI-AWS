@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="SiemensLoggingTemplateV1" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="level"/>
+    <parameter name="component"/>
+    <parameter name="message"/>
+    <sequence>
+        <log level="custom">
+            <property expression="$func:level" name="LEVEL"/>
+            <property expression="$func:component" name="COMPONENT"/>
+            <property expression="$func:message" name="MESSAGE"/>
+        </log>
+    </sequence>
+</template>
