@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template name="SiemensEmployees_LocalProxy_Endpoint" xmlns="http://ws.apache.org/ns/synapse">
     <endpoint name="SiemensEmployees_LocalProxy_Endpoint">
-        <address uri="local://services/SiemensEmployees_LocalProxy">
+        <address uri="local:///services/SiemensEmployeesServiceV1_Employees_LocalProxy/">
             <timeout>
                 <duration>30</duration>
             </timeout>

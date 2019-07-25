@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proxy name="SiemensEmployeesServiceV1_Employees_LocalProxy" startOnLoad="true" transports="http" xmlns="http://ws.apache.org/ns/synapse">
     <target>
-        <inSequence/>
+        <inSequence>
+            <call-template target="SiemensLoggingTemplateV1">
+                <with-param name="level" value="Info"/>
+                <with-param name="component" value="SiemensEmployeesServiceV1_Employees_LocalProxy"/>
+                <with-param name="message" value="[PROXY_INIT] Initializing Local Proxy"/>
+            </call-template>
+            <log level="custom">
+                <property expression="$body" name="BODY"/>
+            </log>
+        </inSequence>
         <outSequence/>
         <faultSequence/>
     </target>
